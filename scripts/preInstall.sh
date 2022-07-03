@@ -1,9 +1,12 @@
+#set env vars
+set -o allexport; source .env; set +o allexport;
+
 mkdir -p ./conf;
 
 #create account
 apt-get install apache2-utils -y
-touch /opt/app/conf/passwords;
-echo "[APP_PASSWORD]" | htpasswd -c -i ./conf/passwords root
+touch ./conf/passwords;
+echo $APP_PASSWORD | htpasswd -c -i ./conf/passwords root
 
 #generate squid.conf
 cat << EOT > ./conf/squid.conf
