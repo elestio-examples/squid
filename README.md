@@ -50,7 +50,7 @@ Node.js example usage
 
 
 To add a new user:
-1) Connect over SSH to the service, you can do that from the service dashboard > Open terminal
+1) Connect over SSH to the pipeline, you can do that from the dashboard > CI/CD pipeline Open terminal
 2) Type this command to create a new user with login "alice32" and password "ZEf651-gr_5xz9ETh"
 
     echo "ZEf651-gr_5xz9ETh" | htpasswd -i ./conf/passwords alice32
