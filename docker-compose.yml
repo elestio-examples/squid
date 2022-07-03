@@ -2,7 +2,6 @@ version: '3'
 services:
   squid:
     image: b4tman/squid:${SOFTWARE_VERSION_TAG}
-    container_name: squid
     hostname: squid
     environment: 
       - SQUID_CONFIG_FILE=/etc/squid/squid.conf

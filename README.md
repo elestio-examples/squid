@@ -53,10 +53,10 @@ To add a new user:
 1) Connect over SSH to the service, you can do that from the service dashboard > Open terminal
 2) Type this command to create a new user with login "alice32" and password "ZEf651-gr_5xz9ETh"
 
-    echo "ZEf651-gr_5xz9ETh" | htpasswd -i /opt/app/conf/passwords alice32
+    echo "ZEf651-gr_5xz9ETh" | htpasswd -i ./conf/passwords alice32
 
 To delete a user:
 1) Connect over SSH to the service, you can do that from the service dashboard > Open terminal
 2) Type this command to delete the user "alice32"
 
-    htpasswd -D /opt/app/conf/passwords alice32
+    htpasswd -D ./conf/passwords alice32
